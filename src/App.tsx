@@ -1,25 +1,20 @@
-import { useState } from 'react'
-import './App.css'
+import * as dayjs from "dayjs";
+
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const day = dayjs().diff("2022-06-22", "days");
 
   return (
     <div className="App">
       <header className="App-header">
-        <p>Hello Vite + React! 自动化部署简单测试  修改触发自动部署</p>
         <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
+          这是我们在一起的第
+          <span style={{ color: "red", fontSize: "60px" }}>{day}</span>天
         </p>
-        <p>
-          Edit <code>App.tsx</code> and save to test HMR updates.
-        </p>
-
       </header>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
