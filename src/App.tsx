@@ -1,9 +1,10 @@
-import * as dayjs from "dayjs";
+import React from "react";
+import moment from "moment";
 
 import "./App.css";
 
-function App() {
-  const day = dayjs().diff("2022-06-22", "days");
+const App: React.FC = () => {
+  const day = moment().diff("2022-06-22", "days");
 
   return (
     <div className="App">
@@ -15,6 +16,6 @@ function App() {
       </header>
     </div>
   );
-}
+};
 
 export default App;
