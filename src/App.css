@@ -24,7 +24,7 @@
   font-size: calc(10px + 2vmin);
   color: white;
   background-image: url('./flower.webp');
-  background-repeat:repeat-x;
+  /* background-repeat:repeat-x; */
 }
 
 .App-link {
